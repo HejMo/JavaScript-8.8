@@ -3,10 +3,11 @@ console.log(text);
 
 var animal = 'Zielone słonie';
 console.log(animal);
-var animal = animal.toUpperCase();
+animal = animal.toUpperCase();
 console.log(animal);
 
-var text = text.replace('Papugi', animal);
+var textArray = text.split(' koszą');
+text = text.replace(textArray[0], animal);
 console.log(text);
 
 console.log('First part of sentence :');
